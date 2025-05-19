@@ -1,0 +1,32 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  rabbitmq:
+    host: s4.java21.net
+    port: 5672
+    username: admin
+    password: nhnacademy123!
+  cloud:
+    bus:
+      enabled: true
+    config:
+      server:
+        git:
+          uri: https://github.com/nhnacademy-be09-ink3/ink3-config.git
+          clone-on-start: true
+          default-label: main
+          search-paths:
+            - api
+            - front
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
