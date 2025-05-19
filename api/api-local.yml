@@ -6,7 +6,7 @@ server:
   port: 10260
 
 api:
-  message: localtest
+  message: localtest123
   profile:
     active:
       message: config test
