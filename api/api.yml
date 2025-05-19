@@ -4,6 +4,8 @@ app:
 
 server:
   port: 10260
+  servlet:
+    context-path: /shop
 
 management:
   endpoints:
@@ -16,3 +18,13 @@ api:
   profile:
     active:
       message: config test
+
+payment:
+  toss:
+    client_key : "temp"
+    secret_key : "temp"
+    confirm_url : "https://api.tosspayments.com/v1/payments/confirm"
+    success_url : "http://localhost:8080/payment/success"
+    fail_url : "http://localhost:8080/payment/fail"
+
+

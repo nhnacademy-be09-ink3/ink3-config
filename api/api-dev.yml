@@ -5,13 +5,6 @@ app:
 server:
   port: 10260
 
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, refresh
-
 api:
   message: dev
   profile:
@@ -45,3 +38,6 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_URL}
+
+aladin:
+  ttb-key: ${TTB_KEY}

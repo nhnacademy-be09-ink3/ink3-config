@@ -5,19 +5,11 @@ app:
 server:
   port: 10260
 
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, refresh
-
 api:
   message: local
   profile:
     active:
       message: config test
-
 
 spring:
   h2:

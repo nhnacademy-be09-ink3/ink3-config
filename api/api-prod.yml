@@ -5,12 +5,6 @@ app:
 server:
   port: 10260
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health, refresh
-
 api:
   message: prod
   profile:
@@ -23,6 +17,12 @@ spring:
     url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_prod
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+  data:
+    redis:
+      host: s4.java21.net
+      port: 6379
+      database: 298
+      password: ${REDIS_PASSWORD}
   jpa:
     open-in-view: false
     show-sql: true
@@ -44,3 +44,5 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_URL}
+aladin:
+  ttb-key: ${TTB_KEY}
