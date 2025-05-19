@@ -28,6 +28,6 @@ payment:
     fail_url : "http://localhost:8080/payment/fail"
 
 aladin:
-  ttb-key: "ttbin20151747001"
+  ttb-key: ${TTB_KEY}
 
 
