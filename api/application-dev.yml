@@ -1,5 +1,5 @@
 app:
-  name: api
+  name: client1
   version: 0.0.1
   profile:
     active: dev
