@@ -1,5 +1,5 @@
 app:
-  name: Spring cloud config
+  name: shop-service
   version: 0.0.1
 
 server:
