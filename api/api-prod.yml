@@ -12,9 +12,10 @@ management:
         include: health, refresh
 
 api:
+  message: default
   profile:
     active:
-      message: config prod test 1
+      message: config test
 
 spring:
   datasource:
