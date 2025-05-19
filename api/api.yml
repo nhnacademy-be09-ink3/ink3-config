@@ -16,7 +16,3 @@ api:
   profile:
     active:
       message: config test
-
-spring:
-  application:
-    name: shop-service
