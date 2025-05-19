@@ -38,6 +38,3 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_URL}
-
-aladin:
-  ttb-key: ${TTB_KEY}
