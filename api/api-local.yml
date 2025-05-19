@@ -14,7 +14,7 @@ api:
 management:
   endpoint:
     env:
-      show-values: true
+      show-values: ALWAYS
 
 spring:
   h2:
