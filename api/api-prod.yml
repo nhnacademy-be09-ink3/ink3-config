@@ -5,20 +5,19 @@ app:
 server:
   port:10260
 
-
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: health, refresh
 
 client:
-  message: config dev test 1
+  message: config prod test 1
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_dev
+    url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_prod
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
@@ -31,11 +30,11 @@ spring:
         highlight_sql: true
         auto_quote_keyword: true
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
 logging:
   level:
-    org.hibernate.orm.jdbc.bind: trace
-    org.springframework.transaction.interceptor: trace
+    org.hibernate.orm.jdbc.bind: info
+    org.springframework.transaction.interceptor: info
 eureka:
   client:
     fetch-registry: true

@@ -6,7 +6,7 @@ server:
   port:10260
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: health, refresh
