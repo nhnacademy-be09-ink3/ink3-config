@@ -11,11 +11,6 @@ api:
     active:
       message: config test
 
-management:
-  endpoint:
-    env:
-      show-values: ALWAYS
-
 spring:
   h2:
     console:
