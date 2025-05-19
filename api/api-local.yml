@@ -13,7 +13,7 @@ management:
         include: health, refresh
 
 api:
-  message: default
+  message: local
   profile:
     active:
       message: config test

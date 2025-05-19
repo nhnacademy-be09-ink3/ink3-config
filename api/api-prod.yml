@@ -12,7 +12,7 @@ management:
         include: health, refresh
 
 api:
-  message: default
+  message: prod
   profile:
     active:
       message: config test
