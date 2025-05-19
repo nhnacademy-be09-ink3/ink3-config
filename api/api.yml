@@ -27,4 +27,7 @@ payment:
     success_url : "http://localhost:8080/payment/success"
     fail_url : "http://localhost:8080/payment/fail"
 
+aladin:
+  ttb-key: ${TTB_KEY}
+
 
