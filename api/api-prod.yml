@@ -3,7 +3,7 @@ app:
   version: 0.0.1
 
 server:
-  port:10260
+  port: 10260
 
 management:
   endpoints:
