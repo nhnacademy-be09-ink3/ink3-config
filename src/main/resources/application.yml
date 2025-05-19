@@ -20,6 +20,7 @@ spring:
           default-label: main
           search-paths:
             - api
+            - front
 
 management:
   endpoints:
