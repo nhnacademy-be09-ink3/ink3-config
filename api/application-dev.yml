@@ -2,6 +2,10 @@ app:
   name: Spring cloud config
   version: 0.0.1
 
+server:
+  port:10260
+
+
 management:
   endpoint:
     web:
