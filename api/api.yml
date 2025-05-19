@@ -11,7 +11,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, refresh
+        include: health, refresh, env
 
 api:
   message: default
