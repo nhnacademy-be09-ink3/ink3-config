@@ -1,3 +1,16 @@
+app:
+  name: Spring cloud config
+  version: 0.0.1
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health, refresh
+
+client:
+  message: config default test 1
+
 spring:
   application:
     name: shop-service

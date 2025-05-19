@@ -1,3 +1,16 @@
+app:
+  name: Spring cloud config
+  version: 0.0.1
+
+management:
+  endpoint:
+    web:
+      exposure:
+        include: health, refresh
+
+client:
+  message: config prod test 1
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
