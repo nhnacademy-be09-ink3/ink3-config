@@ -12,8 +12,10 @@ management:
       exposure:
         include: health, refresh
 
-client:
-  message: config dev test 1
+api:
+  profile:
+    active:
+      message: config dev test 1
 
 spring:
   datasource:
