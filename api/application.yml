@@ -10,6 +10,16 @@ payment:
 server:
   servlet:
     context-path: /shop
-    
+
 aladin:
   ttb-key: ${TTB_KEY}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
