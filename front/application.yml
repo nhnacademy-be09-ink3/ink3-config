@@ -1,8 +1,4 @@
 server:
-  port: 10254
-spring:
-  application:
-    name: int3-front
   cloud:
     openfeign:
       okhttp:
