@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ink3-eureka
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+server:
+  shutdown: graceful
