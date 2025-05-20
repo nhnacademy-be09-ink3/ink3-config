@@ -15,4 +15,4 @@ management:
     env:
       show-values: true
     health:
-      show-details: always
+      show-details: ALWAYS
