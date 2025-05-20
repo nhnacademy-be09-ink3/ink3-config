@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: auth-service
+  cloud:
+    openfeign:
+      okhttp:
+        enabled: true
+server:
+  servlet:
+    context-path: /auth
