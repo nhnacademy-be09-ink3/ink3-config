@@ -10,3 +10,6 @@ payment:
 server:
   servlet:
     context-path: /shop
+    
+aladin:
+  ttb-key: ${TTB_KEY}
