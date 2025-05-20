@@ -12,6 +12,7 @@ management:
       exposure:
         include: "*"
   endpoint:
-
+    env:
+      show-values: ALWAYS
     health:
       show-details: ALWAYS
