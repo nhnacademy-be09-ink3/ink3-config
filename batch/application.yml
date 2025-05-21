@@ -8,3 +8,6 @@ management:
       show-values: ALWAYS
     health:
       show-details: ALWAYS
+
+test:
+  testname: nhn
