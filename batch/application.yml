@@ -4,6 +4,7 @@ spring:
     port: 5672
     username: admin
     password: nhnacademy123!
+    virtual-host: ink_dev
 
 management:
   endpoints:
