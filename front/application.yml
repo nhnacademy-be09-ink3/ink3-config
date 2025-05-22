@@ -24,3 +24,5 @@ management:
       show-values: ALWAYS
     health:
       show-details: ALWAYS
+
+test: 집에가고싶다
