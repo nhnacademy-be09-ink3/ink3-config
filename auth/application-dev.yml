@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
   data:
     redis:
       host: s4.java21.net
@@ -12,17 +17,7 @@ jwt:
   refresh-token-validity: 604800000
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
     service-url:
       defaultZone: ${EUREKA_URL}
-  instance:
-    prefer-ip-address: true
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-  endpoint:
-    health:
-      show-details: always
+    fetch-registry: true
+    register-with-eureka: true

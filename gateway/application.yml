@@ -14,16 +14,3 @@ spring:
             allowedHeaders: "*"
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
-  main:
-    allow-bean-definition-overriding: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    env:
-      show-values: ALWAYS
-    health:
-      show-details: ALWAYS

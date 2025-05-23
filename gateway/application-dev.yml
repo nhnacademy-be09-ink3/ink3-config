@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: ${RABBITMQ_HOST}
+    port: ${RABBITMQ_PORT}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
   data:
     redis:
       host: s4.java21.net
@@ -11,8 +16,6 @@ eureka:
       defaultZone: ${EUREKA_URL}
     fetch-registry: true
     register-with-eureka: true
-  instance:
-    prefer-ip-address: true
 gateway:
   whitelist:
     - /auth/**
