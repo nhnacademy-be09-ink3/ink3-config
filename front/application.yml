@@ -12,18 +12,3 @@ feign:
   url:
     auth: ""
     shop: ""
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    env:
-      show-values: ALWAYS
-    health:
-      show-details: ALWAYS
-
-test:
-  test1: 하이용
