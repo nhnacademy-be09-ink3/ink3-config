@@ -1,4 +1,11 @@
 spring:
+  application:
+    name: ink3-batch
+  config:
+    import: optional:configserver:https://ink3.shop/config/
+  cloud:
+    bus:
+      enabled: true
   rabbitmq:
     host: s4.java21.net
     port: 5672
@@ -10,6 +17,10 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
+  sql:
+    init:
+      mode: always
+      platform: h2
   batch:
     jdbc:
       initialize-schema: always
@@ -22,9 +33,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
-  endpoint:
-    env:
-      show-values: ALWAYS
-    health:
-      show-details: ALWAYS
+        include:
+          - busrefresh
