@@ -15,6 +15,18 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
+  mysql-datasource:
+    url: jdbc:mysql://localhost:3306/your_db
+    username: your_username
+    password: your_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: org.apache.commons.dbcp2.BasicDataSource
+    dbcp2:
+      initial-size: 5
+      max-total: 10
+      max-idle: 5
+      min-idle: 2
+      max-wait-millis: 10000
   sql:
     init:
       mode: always
