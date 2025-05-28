@@ -19,3 +19,4 @@ eureka:
 gateway:
   whitelist:
     - /auth/**
+    - /shop/users/check
