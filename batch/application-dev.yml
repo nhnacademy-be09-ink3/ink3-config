@@ -28,18 +28,6 @@ spring:
       enabled: true
       path: /h2-console
 
-mysql-source:
-  url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_dev?serverTimezone=Asia/Seoul
-  username: project_be9_team3
-  password: -/jvCmf5WlFZF!U_
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  type: org.apache.commons.dbcp2.BasicDataSource
-  dbcp2:
-    initial-size: 5
-    max-total: 10
-    max-idle: 5
-    min-idle: 2
-    max-wait-millis: 10000
 
 management:
   endpoints:
