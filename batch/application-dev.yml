@@ -29,7 +29,7 @@ spring:
       path: /h2-console
 
 mysql-datasource:
-  url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_dev
+  url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_dev?serverTimezone=Asia/Seoul
   username: project_be9_team3
   password: -/jvCmf5WlFZF!U_
   driver-class-name: com.mysql.cj.jdbc.Driver
