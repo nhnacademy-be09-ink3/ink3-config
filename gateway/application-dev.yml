@@ -18,5 +18,7 @@ eureka:
     register-with-eureka: true
 gateway:
   whitelist:
-    - /auth/**
-    - /shop/**
+    - path: /auth/**
+      methods: [ ]
+    - path: /shop/**
+      methods: [ ]

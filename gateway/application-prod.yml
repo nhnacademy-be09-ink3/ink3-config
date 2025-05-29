@@ -18,12 +18,23 @@ eureka:
     register-with-eureka: true
 gateway:
   whitelist:
-    - /auth/**
-    - /shop/users
-    - /shop/users/check
-    - /shop/guest-cart
-    - /shop/books/*/reviews
-    - /shop/books
-    - /shop/books/*
-    - /shop/books/category
-    - /shop/books/search
+    - path: /auth/**
+      methods: [ ]
+    - path: /shop/users
+      methods: [ POST ]
+    - path: /shop/users/social
+      methods: [ POST ]
+    - path: /shop/users/check
+      methods: [ GET ]
+    - path: /shop/guest-cart
+      methods: [ ]
+    - path: /shop/books/*/reviews
+      methods: [ ]
+    - path: /shop/books
+      methods: [ ]
+    - path: /shop/books/*
+      methods: [ ]
+    - path: /shop/books/category
+      methods: [ ]
+    - path: /shop/books/search
+      methods: [ ]
