@@ -19,5 +19,11 @@ eureka:
 gateway:
   whitelist:
     - /auth/**
-    - /shop/users/check
     - /shop/users
+    - /shop/users/check
+    - /shop/guest-cart
+    - /shop/books/*/reviews
+    - /shop/books
+    - /shop/books/*
+    - /shop/books/category
+    - /shop/books/search
