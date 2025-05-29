@@ -20,3 +20,4 @@ gateway:
   whitelist:
     - /auth/**
     - /shop/users/check
+    - /shop/users
