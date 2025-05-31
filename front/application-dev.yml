@@ -4,6 +4,7 @@ server:
     context-path: /dev
 feign:
   url:
+    gateway: http://127.0.0.1:10265
     auth: http://127.0.0.1:10265/auth
     shop: http://127.0.0.1:10265/shop
 auth:
