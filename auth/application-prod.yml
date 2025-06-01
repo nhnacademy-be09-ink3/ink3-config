@@ -21,3 +21,16 @@ eureka:
       defaultZone: ${EUREKA_URL}
     fetch-registry: true
     register-with-eureka: true
+oauth2:
+  client:
+    registrations:
+      payco:
+        client-id: ${PAYCO_CLIENT_ID}
+        client-secret: ${PAYCO_CLIENT_SECRET}
+        redirect-uri: https://ink3.shop/gateway/auth/oauth2/callback/payco
+        authorization-grant-type: authorization_code
+        authorization-uri: https://id.payco.com/oauth2.0/authorize?serviceProviderCode=FRIENDS
+        token-uri: https://id.payco.com/oauth2.0/token
+        user-info-uri: https://apis-payco.krp.toastoven.net/payco/friends/find_member_v2.json
+front:
+  url: https://ink3.shop
