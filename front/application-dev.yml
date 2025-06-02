@@ -1,4 +1,10 @@
 gateway-base-url: https://ink3.shop/dev/gateway
+
+toss:
+  url:
+    success: https://ink3.shop/dev/payments/success
+    fail: https://ink3.shop/dev/payments/fail
+
 server:
   servlet:
     context-path: /dev
