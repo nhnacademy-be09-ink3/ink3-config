@@ -1,4 +1,10 @@
 gateway-base-url: https://ink3.shop/gateway
+
+toss:
+  url:
+    success: https://ink3.shop/payments/success
+    fail: https://ink3.shop/payments/fail
+
 feign:
   url:
     gateway: http://127.0.0.1:10250
