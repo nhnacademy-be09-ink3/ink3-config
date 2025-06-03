@@ -6,3 +6,8 @@ spring:
 server:
   servlet:
     context-path: /auth
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, info

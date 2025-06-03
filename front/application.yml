@@ -12,3 +12,8 @@ feign:
   url:
     auth: "default"
     shop: "default"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, info
