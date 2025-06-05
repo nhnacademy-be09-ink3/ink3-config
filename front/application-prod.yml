@@ -3,6 +3,8 @@ toss:
   url:
     success: https://ink3.shop/payments/success
     fail: https://ink3.shop/payments/fail
+    success-guest: https://ink3.shop/guest/payments/success
+    fail-guest: https://ink3.shop/guest/payments/fail
 feign:
   url:
     gateway: http://127.0.0.1:10250
