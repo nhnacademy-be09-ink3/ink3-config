@@ -3,6 +3,8 @@ toss:
   url:
     success: https://ink3.shop/dev/payments/success
     fail: https://ink3.shop/dev/payments/fail
+    success-guest: https://ink3.shop/dev/guest/payments/success
+    fail-guest: https://ink3.shop/dev/guest/payments/fail
 server:
   servlet:
     context-path: /dev
