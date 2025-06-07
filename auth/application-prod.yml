@@ -14,7 +14,8 @@ jwt:
   private-key-path: ${JWT_PRIVATE_KEY_PATH}
   public-key-path: ${JWT_PUBLIC_KEY_PATH}
   access-token-validity: 1800000
-  refresh-token-validity: 604800000
+  refresh-token-session-validity: 86400000
+  refresh-token-validity: 2592000000
 eureka:
   client:
     service-url:
