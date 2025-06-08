@@ -24,8 +24,10 @@ gateway:
       methods: [ POST ]
     - path: /shop/users/social
       methods: [ POST ]
-    - path: /shop/users/check
+    - path: /shop/users/available
       methods: [ GET ]
+    - path: /shop/admins
+      methods: [ POST ]
     - path: /shop/guest-cart
       methods: [ ]
     - path: /shop/books/*/reviews
