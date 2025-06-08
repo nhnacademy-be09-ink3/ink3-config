@@ -4,6 +4,10 @@ spring:
     url: jdbc:mysql://s4.java21.net:13306/project_be9_team3_prod
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+    hikari:
+      connection-timeout: 5000
+      maximum-pool-size: 32
+      minimum-idle: 32
   data:
     redis:
       host: s4.java21.net
