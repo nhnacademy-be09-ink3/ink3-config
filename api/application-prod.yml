@@ -6,8 +6,8 @@ spring:
     password: ${DB_PASSWORD}
     hikari:
       connection-timeout: 5000
-      maximum-pool-size: 16
-      minimum-idle: 16
+      maximum-pool-size: 10
+      minimum-idle: 10
   data:
     redis:
       host: s4.java21.net
