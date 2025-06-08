@@ -20,29 +20,21 @@ gateway:
   whitelist:
     - path: /auth/**
       methods: [ ]
-    - path: /shop/**
+    - path: /shop/users
+      methods: [ POST ]
+    - path: /shop/users/social
+      methods: [ POST ]
+    - path: /shop/users/available
+      methods: [ GET ]
+    - path: /shop/guest-cart
       methods: [ ]
-#gateway:
-#  whitelist:
-#    - path: /auth/**
-#      methods: [ ]
-#    - path: /shop/users
-#      methods: [ POST ]
-#    - path: /shop/users/social
-#      methods: [ POST ]
-#    - path: /shop/users/available
-#      methods: [ GET ]
-#    - path: /shop/admins
-#      methods: [ POST ]
-#    - path: /shop/guest-cart
-#      methods: [ ]
-#    - path: /shop/books/*/reviews
-#      methods: [ ]
-#    - path: /shop/books
-#      methods: [ ]
-#    - path: /shop/books/*
-#      methods: [ ]
-#    - path: /shop/books/category
-#      methods: [ ]
-#    - path: /shop/books/search
-#      methods: [ ]
+    - path: /shop/books/*/reviews
+      methods: [ ]
+    - path: /shop/books
+      methods: [ ]
+    - path: /shop/books/*
+      methods: [ ]
+    - path: /shop/books/category
+      methods: [ ]
+    - path: /shop/books/search
+      methods: [ ]
