@@ -27,10 +27,6 @@ spring:
   cloud:
     bus:
       enabled: true
-logging:
-  level:
-    org.hibernate.orm.jdbc.bind: info
-    org.springframework.transaction.interceptor: info
 eureka:
   client:
     fetch-registry: true
@@ -43,3 +39,6 @@ minio:
   secret-key: ${MINIO_SECRET_KEY}
   review-bucket: ink3-prod-reviews-images
   book-bucket: ink3-prod-books-images
+logging:
+  level:
+    root: INFO
