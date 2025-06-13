@@ -27,6 +27,8 @@ spring:
   cloud:
     bus:
       enabled: true
+  cache:
+    type: redis
 eureka:
   client:
     fetch-registry: true
