@@ -8,6 +8,10 @@ server:
     context-path: /shop
 aladin:
   ttb-key: ${TTB_KEY}
+elasticsearch:
+  url: http://s4.java21.net:9200
+  index: default
+  key: default
 management:
   endpoints:
     web:
