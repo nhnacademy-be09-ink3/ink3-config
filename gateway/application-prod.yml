@@ -46,3 +46,9 @@ gateway:
       methods: [ GET ]
     - path: /shop/shipping-policies/**
       methods: [ GET ]
+    - path: /shop/guest-order/**
+      methods: [ ]
+    - path: /shop/guest-payment/**
+      methods: [ ]
+    - path: /shop/order-books/orders/**
+      methods: [ GET ]
