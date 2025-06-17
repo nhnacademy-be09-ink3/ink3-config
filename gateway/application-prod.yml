@@ -44,3 +44,5 @@ gateway:
       methods: [ GET ]
     - path: /shop/coupons/**
       methods: [ GET ]
+    - path: /shop/shipping-policies/**
+      methods: [ GET ]
