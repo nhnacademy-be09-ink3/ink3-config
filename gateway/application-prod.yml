@@ -31,7 +31,7 @@ gateway:
     - path: /shop/books/*/reviews
       methods: [ ]
     - path: /shop/books
-      methods: [ ]
+      methods: [ GET ]
     - path: /shop/books/*
       methods: [ ]
     - path: /shop/books/category

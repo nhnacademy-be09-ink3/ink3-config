@@ -8,8 +8,8 @@ toss:
 feign:
   url:
     gateway: http://127.0.0.1:10273
-    auth: http://127.0.0.1:10250/auth
-    shop: http://127.0.0.1:10250/shop
+    auth: http://127.0.0.1:10273/auth
+    shop: http://127.0.0.1:10273/shop
 spring:
   rabbitmq:
     host: ${RABBITMQ_HOST}
