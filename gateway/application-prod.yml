@@ -28,13 +28,11 @@ gateway:
       methods: [ GET ]
     - path: /shop/guest-cart
       methods: [ ]
-    - path: /shop/books/*/reviews
-      methods: [ ]
-    - path: /shop/books
+    - path: /shop/me/books/*/reviews
       methods: [ GET ]
-    - path: /shop/books/*
-      methods: [ ]
-    - path: /shop/books/category
-      methods: [ ]
-    - path: /shop/books/search
-      methods: [ ]
+    - path: /shop/books/**
+      methods: [ GET ]
+    - path: /shop/categories/tree
+      methods: [ GET ]
+    - path: /shop/search/**
+      methods: [ GET ]
