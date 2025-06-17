@@ -7,7 +7,7 @@ toss:
     fail-guest: https://ink3.shop/guest-payment/fail
 feign:
   url:
-    gateway: http://127.0.0.1:10250
+    gateway: http://127.0.0.1:10273
     auth: http://127.0.0.1:10250/auth
     shop: http://127.0.0.1:10250/shop
 spring:
