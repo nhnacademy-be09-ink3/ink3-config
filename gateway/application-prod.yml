@@ -32,6 +32,10 @@ gateway:
       methods: [ GET ]
     - path: /shop/books/**
       methods: [ GET ]
+    - path: /shop/books/*/view
+      methods: [ POST ]
+    - path: /shop/books/*/search
+      methods: [ POST ]
     - path: /shop/categories/tree
       methods: [ GET ]
     - path: /shop/search/**
