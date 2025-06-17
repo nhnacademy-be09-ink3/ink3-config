@@ -40,3 +40,5 @@ gateway:
       methods: [ GET ]
     - path: /shop/search/**
       methods: [ GET ]
+    - path: /shop/packagings/**
+      methods: [ GET ]
